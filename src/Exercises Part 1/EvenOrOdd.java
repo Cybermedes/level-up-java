@@ -1,7 +1,9 @@
+
 import java.util.Scanner;
 
 public class EvenOrOdd {
-	
+
+	//Program that checks if a number is odd or even
 	public static void main(String[] args) {
 		
 		Scanner reader = new Scanner(System.in);
@@ -13,7 +15,6 @@ public class EvenOrOdd {
 		} else {
 			System.out.println("Your number "+myNumber+" is odd.");
 		}
-		
 		reader.close();
 	}
 }

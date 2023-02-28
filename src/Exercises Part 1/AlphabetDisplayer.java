@@ -1,7 +1,8 @@
 
 public class AlphabetDisplayer {
-	public static void main(String[] args) {
+
 	//Print all the alphabet letters uppercase and lowercase
+	public static void main(String[] args) {
 		
 		char firstLetter = 'a';
 		char firstLetterUpper = 'A';

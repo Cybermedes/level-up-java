@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class MultiplicationTable {
-	
+
+	//Program that prints the multiplication table of a given number
 	public static void main(String[] args) {
 		
 		Scanner reader = new Scanner(System.in);

@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class ArmstrongNumber {
 	
+	/*Program that calculates the Armstrong number. It is a number that is equal
+	to the sum of cube of its digits
+	*/
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Type one number: ");

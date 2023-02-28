@@ -1,10 +1,10 @@
 
 public class QuotientRemainder {
-	
+
+	//Program that calculates and prints the dividend and the remainder of a division
 	public static void main(String[] args) {
 		
 		int dividend = 1247236; int divisor = 4;
-		
 		int quotient = dividend / divisor;
 		int remainder 	= dividend % divisor;
 		

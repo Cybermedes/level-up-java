@@ -10,7 +10,6 @@ public class Palindrome {
 		
 		switch (paliType) {
 		case "string":
-			
 			System.out.print("Type the word: ");
 			String str = scanner.next();
 			String reverseStr = "";
@@ -29,7 +28,6 @@ public class Palindrome {
 			break;
 			
 		case "int":
-			
 			System.out.print("Type one number: ");
 			int numb = scanner.nextInt();
 			int reverseNumb = 0;			

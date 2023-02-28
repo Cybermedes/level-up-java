@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class CounterOfDigits {
-	
+
+	//Program that counts the number of digits of an input integer
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		System.out.print("Type one number: ");

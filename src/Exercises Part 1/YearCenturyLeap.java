@@ -1,15 +1,15 @@
 
 public class YearCenturyLeap {
 
+	/*
+	 * A leap year is exactly divisible by 4 except for century years (years ending
+	 * with 00). The century year is a leap year only if it is perfectly divisible
+	 * by 400.
+	 */
 	public static void main(String[] args) {
-		/*
-		 * A leap year is exactly divisible by 4 except for century years (years ending
-		 * with 00). The century year is a leap year only if it is perfectly divisible
-		 * by 400.
-		 */
+
 		int year = 800;
 		boolean leap = false;
-
 		if (year % 4 == 0) {
 		      // if the year is century
 		      if (year % 100 == 0) {

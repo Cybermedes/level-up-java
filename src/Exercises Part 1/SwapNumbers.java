@@ -1,13 +1,13 @@
 
 public class SwapNumbers {
-	
+
+	/* Swap two numbers in java. One by using a temporary variable
+		the second doesn't use temporary variable
+		*/
 	public static void main(String[] args) {
-		//Swap two numbers in java. One by using a temporary variable
-		//the second doesn't use temporary variable
 		
 		int first = 15634;
 		int second = 93641;
-		
 		System.out.println("------Before------");
 		System.out.println("First= "+first);
 		System.out.println("Second= "+second);
@@ -34,6 +34,5 @@ public class SwapNumbers {
 		System.out.println("------After------");
 		System.out.println("Third= "+third);
 		System.out.println("Fourth= "+fourth);
-		
 	}
 }

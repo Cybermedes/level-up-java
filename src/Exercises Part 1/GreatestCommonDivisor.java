@@ -1,10 +1,10 @@
 
 public class GreatestCommonDivisor {
-	
+
+	//Program that calculates the Greatest Common Divisor between 2 ints
 	public static void main(String[] args) {
 		
 		int numOne = 100, numTwo = 120, gcd = 1;
-		
 		if (numOne == numTwo) {
 			System.out.println("The GCD of "+numOne+" is the number itself.");
 		} else {

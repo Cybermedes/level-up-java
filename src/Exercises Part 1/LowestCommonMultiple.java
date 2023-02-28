@@ -1,6 +1,7 @@
 
 public class LowestCommonMultiple {
-	
+
+	//Program that calculates the Lowest Common Multiple between 2 ints
 	public static void main(String[] args) {
 		int numOne = 10, numTwo = 20, gcd = 1;
 		

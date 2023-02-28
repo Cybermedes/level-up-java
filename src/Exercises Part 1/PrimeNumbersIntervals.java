@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class PrimeNumbersIntervals {
 
+    //Program that find all the prime numbers in interval determined by the user
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
@@ -11,14 +12,11 @@ public class PrimeNumbersIntervals {
 		
 		System.out.print("End: ");
 		int endInter = scanner.nextInt();
-		
 		System.out.println("The prime numbers of the interval: ");
 		
 		while (startInter < endInter) {
             boolean flag = false;
-
             for(int i = 2; i <= startInter/2; i++) {
-                
                 if(startInter % i == 0) {
                     flag = true;
                     break;
@@ -30,7 +28,6 @@ public class PrimeNumbersIntervals {
             }
             startInter++;
         }
-		
 		scanner.close();
 	}
 }

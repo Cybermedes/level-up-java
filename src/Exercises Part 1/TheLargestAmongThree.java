@@ -1,6 +1,7 @@
 
 public class TheLargestAmongThree {
-	
+
+	//Program that finds the largest number between 3 numbers
 	public static void main(String[] args) {
 		
 		int myNum1 = 14, myNum2 = 45, myNum3 = 8;

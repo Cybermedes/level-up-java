@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class FibonacciSeries {
-	
+
+	//Program that calculates the Fibonacci series of a given number
 	public static void main(String[] args) {
 		
 		Scanner reader = new Scanner(System.in);

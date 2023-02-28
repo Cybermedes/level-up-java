@@ -3,18 +3,15 @@ import java.util.Scanner;
 
 public class SimpleCalculator {
 	
-	@SuppressWarnings("resource")
+	//Program that makes 4 simple mathematical operations
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		
 		double d1,d2;
-		
 		try {
 			System.out.println("Enter a numeric value 1: ");
 			d1 = scanner.nextDouble();
 			scanner.nextLine();
-			
 			System.out.println("Enter a numeric value 2: ");
 			d2 = scanner.nextDouble();
 			scanner.nextLine();
@@ -26,9 +23,7 @@ public class SimpleCalculator {
 		
 		System.out.println("Select the math operation that you want (+ - * /): ");
 		String operation = scanner.nextLine();
-		
 		double result;
-		
 		switch (operation) {
 		case "+":
 			result = d1 + d2;
