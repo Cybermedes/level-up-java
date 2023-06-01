@@ -23,5 +23,6 @@ public class CharacterCounter {
         } else {
             System.out.printf("Your char \"%c\" appears %d times on your text.", myChar, charCounter);
         }
+        reader.close();
     }
 }

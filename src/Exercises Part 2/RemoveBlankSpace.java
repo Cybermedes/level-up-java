@@ -11,5 +11,6 @@ public class RemoveBlankSpace {
         System.out.println("The original text: \"" + userText + "\"");
         userText = userText.replaceAll("\\s", "");
         System.out.println("The text without blank spaces: \"" + userText + "\"");
+        reader.close();
     }
 }

@@ -58,5 +58,6 @@ class GeometryMainPage {
             default:
                 System.out.println("You need to type a number!");
         }
+        reader.close();
     }
 }

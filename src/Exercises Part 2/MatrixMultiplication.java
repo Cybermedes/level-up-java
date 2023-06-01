@@ -4,7 +4,7 @@ public class MatrixMultiplication {
     public static void main(String[] args) {
 
         int rowsA = 2, columnsA = 3;
-        int rowsB = 3, columnsB = 2;
+        int columnsB = 2;
         int[][] matrixA = {{3, -2, 5}, {3, 0, 4}};
         int[][] matrixB = {{2, 3}, {-9, 0}, {0, 4}};
         int[][] result = matrixMultiplication(matrixA, matrixB, rowsA, columnsA, columnsB);

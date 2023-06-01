@@ -26,6 +26,7 @@ public class MatrixTranspose {
         }
         int[][] transpose = transposeMatrix(myMatrix, lines, columns);
         printMatrix(transpose);
+        scanner.close();
     }
 
     private static int[][] transposeMatrix(int[][] matrix, int lines, int columns) {

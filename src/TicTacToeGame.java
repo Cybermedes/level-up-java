@@ -1,4 +1,3 @@
-package tictactoe;
 
 import java.util.Scanner;
 
@@ -60,6 +59,7 @@ public class TicTacToeGame {
             }
         }
         //System.out.println(checkWinner());
+        scanner.close();
     }
 
     public static String checkWinner() {

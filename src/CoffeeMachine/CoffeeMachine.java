@@ -53,6 +53,7 @@ public class CoffeeMachine {
                     break;
             }
         } while(turnOnMachine);
+        scanner.close();
     }
 
     public static void checkInventory(int[] inventory){

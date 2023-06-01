@@ -18,6 +18,7 @@ public class SimpleCalculator {
 		
 		} catch (InputMismatchException e) {
 			System.out.println("Please type a number.");
+			scanner.close();
 			return;
 		}
 		
@@ -39,6 +40,7 @@ public class SimpleCalculator {
 			break;
 		default:
 			System.out.println("You didn't choose a valid operator.");
+			scanner.close();
 			return;			
 		}
 		System.out.println("Your result is: " + result);
