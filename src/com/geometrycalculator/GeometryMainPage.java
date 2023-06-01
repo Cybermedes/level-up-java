@@ -1,4 +1,4 @@
-package geometrycalculator;
+package com.geometrycalculator;
 
 import java.util.Scanner;
 
