@@ -2,3 +2,5 @@
 out/
 MyExamplesJava11.iml
 /bin/
+.settings/
+.classpath
