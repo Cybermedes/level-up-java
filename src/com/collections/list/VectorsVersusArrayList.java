@@ -5,7 +5,13 @@ import java.util.List;
 import java.util.Vector;
 
 class VectorsVersusArrayList {
-
+	
+	/*
+	 * Vectors compared to the ArrayList Vectors appeared on the first Java Version,
+	 * even before ArrayLists In Java 1.2, Vector was retro fitted to implement the
+	 * List interface Both ArrayList and Vector have the same methods Main
+	 * difference between the 2 is performance
+	 */
 	public static void main(String[] args) throws InterruptedException {
 
 		final int size = 1_000_000;
@@ -54,11 +60,13 @@ class VectorsVersusArrayList {
 			}
 		});
 		
+		//Threads to run at the same time
 		thread1.start();
 		thread2.start();
 		thread1.join();
 		thread2.join();
 		
+		//Final results
 		end = System.currentTimeMillis();
 		System.out.println("\nAdded elements using multithreading to the ArrayList: " 
 		+ (end - start) + " ms");
@@ -80,11 +88,13 @@ class VectorsVersusArrayList {
 			}
 		});
 		
+		//Threads to run at the same time
 		thread1.start();
 		thread2.start();
 		thread1.join();
 		thread2.join();
 		
+		//Final results
 		end = System.currentTimeMillis();
 		System.out.println("Added elements using multithreading to the Vector: " 
 		+ (end - start) + " ms");
