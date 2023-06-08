@@ -12,7 +12,7 @@ class VectorsVersusArrayList {
 	 * List interface Both ArrayList and Vector have the same methods Main
 	 * difference between the 2 is performance
 	 */
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException{
 
 		// Create ArrayList
 		List<Integer> arrayList = new ArrayList<>();
@@ -44,11 +44,7 @@ class VectorsVersusArrayList {
 		
 		Thread thread2 = new Thread(() -> addOneMillionElements(multithreadedList));
 		
-		//Threads to run at the same time
-		thread1.start();
-		thread2.start();
-		thread1.join();
-		thread2.join();
+		runThreads(thread1, thread2);
 		
 		//Final results
 		end = System.currentTimeMillis();
@@ -64,11 +60,7 @@ class VectorsVersusArrayList {
 		
 		thread2 = new Thread(() -> addOneMillionElements(multithreadedVector));
 		
-		//Threads to run at the same time
-		thread1.start();
-		thread2.start();
-		thread1.join();
-		thread2.join();
+		runThreads(thread1, thread2);		
 		
 		//Final results
 		end = System.currentTimeMillis();
@@ -82,5 +74,13 @@ class VectorsVersusArrayList {
 		for (int i = 0; i < size; i++) {
 			arr.add(i);
 		}
+	}
+	
+	//Method to start the threads at the same time
+	static void runThreads(Thread t1, Thread t2) throws InterruptedException{
+		t1.start();
+		t2.start();
+		t1.join();
+		t2.join();
 	}
 }
