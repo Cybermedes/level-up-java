@@ -14,51 +14,35 @@ class VectorsVersusArrayList {
 	 */
 	public static void main(String[] args) throws InterruptedException {
 
-		final int size = 1_000_000;
-
 		// Create ArrayList
 		List<Integer> arrayList = new ArrayList<>();
 		long start = System.currentTimeMillis();
 
-		// Add 1 million numbers
-		for (int i = 0; i < size; i++) {
-			arrayList.add(i);
-		}
+		addOneMillionElements(arrayList);
 
 		// How much time ArrayList will take to add 1 million numbers
 		long end = System.currentTimeMillis();
-		System.out.println("Added " + size + " elements to the ArrayList: " 
+		System.out.println("Time to add 1,000,000 elements to the ArrayList: " 
 		+ (end - start) + " ms");
 
 		// Create Vector
 		List<Integer> vector = new Vector<>();
 		start = System.currentTimeMillis();
 
-		// Add 1 million numbers
-		for (int i = 0; i < size; i++) {
-			vector.add(i);
-		}
+		addOneMillionElements(vector);
 
 		// How much time Vector will take to add 1 million numbers
 		end = System.currentTimeMillis();
-		System.out.println("Added " + size + " elements to the Vector: " 
+		System.out.println("Time to add 1,000,000 elements to the Vector: " 
 		+ (end - start) + " ms");
 		
 		//Create 2 ArrayList threads to to run at the same time
 		List<Integer> multithreadedList = new ArrayList<>();
 		start = System.currentTimeMillis();
 		
-		Thread thread1 = new Thread(() -> {
-			for (int i = 0; i < size; i++) {
-				multithreadedList.add(i);
-			}
-		});
+		Thread thread1 = new Thread(() -> addOneMillionElements(multithreadedList));
 		
-		Thread thread2 = new Thread(() -> {
-			for (int i = 0; i < size; i++) {
-				multithreadedList.add(i);
-			}
-		});
+		Thread thread2 = new Thread(() -> addOneMillionElements(multithreadedList));
 		
 		//Threads to run at the same time
 		thread1.start();
@@ -76,17 +60,9 @@ class VectorsVersusArrayList {
 		List<Integer> multithreadedVector = new Vector<>();
 		start = System.currentTimeMillis();
 		
-		thread1 = new Thread(() -> {
-			for (int i = 0; i < size; i++) {
-				multithreadedVector.add(i);
-			}
-		});
+		thread1 = new Thread(() -> addOneMillionElements(multithreadedVector));
 		
-		thread2 = new Thread(() -> {
-			for (int i = 0; i < size; i++) {
-				multithreadedVector.add(i);
-			}
-		});
+		thread2 = new Thread(() -> addOneMillionElements(multithreadedVector));
 		
 		//Threads to run at the same time
 		thread1.start();
@@ -99,5 +75,12 @@ class VectorsVersusArrayList {
 		System.out.println("Added elements using multithreading to the Vector: " 
 		+ (end - start) + " ms");
 		System.out.println("Elements added: " + multithreadedVector.size());
+	}
+	
+	static void addOneMillionElements(List<Integer> arr) {
+		final int size = 1_000_000;
+		for (int i = 0; i < size; i++) {
+			arr.add(i);
+		}
 	}
 }
