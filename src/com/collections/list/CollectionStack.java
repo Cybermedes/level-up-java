@@ -3,6 +3,16 @@ package com.collections.list;
 import java.util.Stack;
 
 class CollectionStack {
+	
+	/*
+	 * The Java collections framework has a class named Stack 
+	 * that provides the functionality of the stack data structure.
+	 * The Stack class extends the Vector class.
+	 * 
+	 * In stack, elements are stored and accessed in Last In First Out manner.
+	 * That is, elements are added to the top of the stack
+	 * and removed from the top of the stack.
+	 */
 
 	public static void main(String[] args) {
 		
