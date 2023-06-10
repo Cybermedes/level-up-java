@@ -5,6 +5,15 @@ import java.util.Queue;
 
 class CollectionsQueue {
 
+	/*
+	 * The Queue interface of the Java collections framework provides
+	 * the functionality of the queue data structure.
+	 * It extends the Collection interface.
+	 * classes that implement it:
+	 * ArrayDeque
+	 * LinkedList
+	 * PriorityQueue
+	 */
 	public static void main(String[] args) {
 		
 		//Creating a queue from the Queue Interface
