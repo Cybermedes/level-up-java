@@ -1,10 +1,8 @@
-# Java na prática :coffee:
+# Java Level Up :coffee:
 
-This repository contains Java programs that covers the fundamentals of the Java Programming language, from the basics to the advanced. :computer:\
-Este programa contém programas em Java que cobrem os fundamentos da linguagem de programação Java, do básico ao avançado. :computer:
+This repository contains Java programs that covers the fundamentals of the Java Programming
+language, from the basics to the advanced. :computer:
 
-These programs were made with the latest version of JDK 17. :floppy_disk:\
-Esses programas foram feitos com a versão mais atual do JDK 17. :floppy_disk:
+These programs were made with the latest version of JDK 21. :floppy_disk:
 
-Working in progress :hammer:\
-Trabalho em andamento :hammer:
+Working in progress :hammer:
