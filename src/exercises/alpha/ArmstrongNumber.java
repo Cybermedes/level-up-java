@@ -23,15 +23,15 @@ public class ArmstrongNumber {
 
         while (numberToCheck > 0) {
             int lastDigit = numberToCheck % 10;
-            result += Math.pow(lastDigit, digits);
+            result += (int) Math.pow(lastDigit, digits);
             numberToCheck /= 10;
         }
 
         System.out.println("Number of digits " + digits);
         if (result == originalNumber) {
-            System.out.println(originalNumber + " is an Armstrong Number.");
+            System.out.println(originalNumber + " IS an Armstrong Number.");
         } else {
-            System.out.println(originalNumber + " is not an Armstrong Number.");
+            System.out.println(originalNumber + " IS NOT an Armstrong Number.");
         }
         scanner.close();
     }
