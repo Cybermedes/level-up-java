@@ -4,17 +4,16 @@ import java.util.Scanner;
 
 public class StringReverseRecursion {
 
-    //Program that reverse a string by using recursion
+    // Program that reverse a string by using recursion
     public static void main(String[] args) {
 
-        Scanner reader = new Scanner(System.in);
-        System.out.print("Type anything: ");
-        String myString = reader.next();
+        try (Scanner reader = new Scanner(System.in)) {
+            System.out.print("Type anything: ");
+            String myString = reader.next();
 
-        String stringRever = reverse(myString);
-        System.out.println("The sentence backwards is \"" + stringRever + "\"");
-
-        reader.close();
+            String stringRever = reverse(myString);
+            System.out.println("The sentence backwards is \"" + stringRever + "\"");
+        }
     }
 
     public static String reverse(String myString) {

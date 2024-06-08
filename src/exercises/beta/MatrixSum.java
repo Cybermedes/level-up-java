@@ -2,10 +2,10 @@ package exercises.beta;
 
 public class MatrixSum {
 
-    //Program that calculates the sum of two matrices
+    // Program that calculates the sum of two matrices
     public static void main(String[] args) {
-        System.out.println("---------------------");
 
+        System.out.println("---------------------");
         int[][] matrixA = {{2, 5, 4}, {5, 8, 3}};
         int[][] matrixB = {{6, 4, 7}, {1, 5, 2}};
 
