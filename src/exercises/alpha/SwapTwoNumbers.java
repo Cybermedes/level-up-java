@@ -1,10 +1,11 @@
 package exercises.alpha;
 
-public class SwapNumbers {
+public class SwapTwoNumbers {
 
-    /* Swap two numbers in java. One by using a temporary variable
-        the second doesn't use temporary variable
-        */
+    /*
+    Swap two numbers in java. One by using a temporary variable
+    the second doesn't use temporary variable
+    */
     public static void main(String[] args) {
 
         int first = 15634;

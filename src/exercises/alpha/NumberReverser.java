@@ -2,7 +2,7 @@ package exercises.alpha;
 
 import java.util.Scanner;
 
-public class NumberReverse {
+public class NumberReverser {
 
     //Program that reverses a number. The last digit becomes the first and so on
     public static void main(String[] args) {

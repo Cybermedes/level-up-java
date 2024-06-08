@@ -2,7 +2,7 @@ package exercises.alpha;
 
 import java.util.Locale;
 
-public class RootsOfQuadEquation {
+public class RootsOfQuadraticEquation {
 
     /*This program will find all the possible roots of a quadratic equation
      *A quadratic equation has the form:

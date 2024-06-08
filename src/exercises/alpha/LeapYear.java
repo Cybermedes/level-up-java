@@ -1,6 +1,6 @@
 package exercises.alpha;
 
-public class YearCenturyLeap {
+public class LeapYear {
 
     /*
      * A leap year is exactly divisible by 4 except for century years (years ending
