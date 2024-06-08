@@ -1,0 +1,5 @@
+This line of text goes for the file
+A new line inside the text file.
+You need to add '\n' manually, otherwise
+your text won't break any line
+and print everything in just one line
